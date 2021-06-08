@@ -1,0 +1,232 @@
+#grid{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows: 200px 1fr 80px;
+  grid-template-areas: 
+  "header "
+  "content "
+  "footer ";
+  background-image: url("wall3.jpg");
+  padding:  0px;
+  font: Philosopher;
+  background-size:1000%;
+  /* outline-style: solid;
+  outline-width: 2px; */
+  
+}
+
+
+#padding{
+  grid-area: padding;
+  display:grid;
+  grid-template-columns:1fr 800px 1fr;
+  grid-template-rows:1fr;
+  grid-template-areas: 
+  ". content ."
+
+}
+#grid2{
+  display:grid;
+  grid-template-columns:120px  1.8fr;
+  grid-template-rows: 180px 1fr 80px;
+  grid-template-areas: 
+  "header header"
+  "padding padding"
+  "footer footer";
+  background-image: url("wall3.jpg");
+  background-position:top;
+  
+
+
+  padding:  0px;
+  /* outline-style: solid;
+  outline-width: 2px; */
+}
+#header{
+  grid-area: header;
+  background-color: rgb(153, 1, 153);
+  text-indent: 20px;
+  position: sticky;
+  top: 0;
+  
+  /* outline-style: solid;
+  outline-width: 2px; */
+  
+}
+
+
+/* #sidebar{
+  grid-area:sidebar;
+  overflow-wrap: break-word;
+
+  top: -20000;
+  padding: 10px;
+  outline-style: solid;
+  outline-width: 2px;
+  } */
+#content{
+  grid-area: content;
+  padding: 20px;
+  font: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  /* outline-style: solid;
+  outline-width: 2px; */
+}
+#footer{
+  grid-area: footer;
+  height: 300px;
+     background-image: url("wall3.jpg");
+  /* outline-style: solid;
+  outline-width: 2px; */
+}
+.red {
+    background-color: red;   
+}
+.blue {
+    background-color: blue; 
+}
+.dark-blue{
+  background-color: darkblue; 
+}
+.yellow {
+    background-color: yellow;   
+}
+.black {
+    background-color: black;   
+}
+.beige{
+  background-color: beige;
+}
+.right {
+    float: right;
+}
+.left{
+  float: left;
+}
+.up{
+  float: up;
+}
+.tab { margin-left: 40px; }
+/* //learn this https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover */
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgb(153, 1, 153);
+  color: black;
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+  border-radius: 2px;
+  
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+@Media screen and (min-width: 940Px){
+ #grid{
+  display:grid;
+  grid-template-columns:  1fr ;
+  grid-template-rows: 160px 1fr 80px;
+  grid-template-areas: 
+  "header "
+  "content "
+  "footer ";
+     background-image: url("wall3.jpg");
+  /* background: image(img src="prison-bars.jpg"); */
+  /* outline-style: solid;
+  outline-width: 2px; */
+}
+#grid2{
+  display:grid;
+  grid-template-columns:  1fr ;
+  grid-template-rows: 160px 1fr 80px;
+  grid-template-areas: 
+  "header "
+  "padding "
+  "footer ";
+     background-image: url("wall3.jpg");
+  /* background: image(img src="prison-bars.jpg"); */
+  /* background-repeat: repeat-y; */
+}
+
+
+#padding{
+
+}
+}
+@Media screen and (max-width: 500Px){
+ #grid{
+  display:grid;
+  grid-template-columns:120px  1.8fr;
+  grid-template-rows: 200px 1fr 80px;
+  grid-template-areas: 
+  "header header"
+  "content content"
+  "footer footer";
+     background-image: url("wall3.jpg");
+
+}
+ #grid2{
+  display:grid;
+  grid-template-columns:120px  1.8fr;
+  grid-template-rows: 200px 1fr 80px;
+  grid-template-areas: 
+  "header header"
+  "padding padding"
+  "footer footer";
+     background-image: url("wall3.jpg");
+
+}
+}
+@Media screen and (max-width: 800Px){
+  #padding{
+  grid-area: padding;
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows:1fr;
+  grid-template-areas: 
+  " content";
+    background-image: url("wall3.jpg");
+
+}
+ 
+}
+.Philosopher { 
+	font-family: Philosopher; 
+} 
+p{
+
+  font-family: "Philosopher";
+  font-size: 16px;
+}
